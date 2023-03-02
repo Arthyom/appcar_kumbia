@@ -9,5 +9,8 @@ class IndexController extends AppController
 
     public function index()
     {
+        View::template(null);
+        View::select(null);
+        echo 'hola k ase';
     }
 }

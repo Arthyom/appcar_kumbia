@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-02-2023 a las 07:50:40
+-- Tiempo de generación: 02-03-2023 a las 06:26:21
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.0.19
 
@@ -85,10 +85,10 @@ CREATE TABLE `taller`
 -- Volcado de datos para la tabla `taller`
 --
 
-INSERT INTO `taller` (`
-id`,
-`nombre
-`) VALUES
+INSERT INTO `taller` (
+`id`,
+`nombre`
+) VALUES
 (1, 'ejemplo'),
 (2, 'ejemplo\r\n');
 
@@ -112,10 +112,10 @@ CREATE TABLE `usuario`
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`
-id`,
-`pass
-`, `user`) VALUES
+INSERT INTO `usuario` (
+`id`,
+`pass`,
+`user`) VALUES
 (1, '1234', 'user1');
 
 -- --------------------------------------------------------
