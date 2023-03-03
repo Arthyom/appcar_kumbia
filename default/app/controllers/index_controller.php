@@ -26,4 +26,12 @@ class IndexController extends AppController
        
 
     }
+
+    public function hola()
+    {
+        # code...
+        View::select(null);
+        View::template(null);
+        echo 'holaaa';
+    }
 }
