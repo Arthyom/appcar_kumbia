@@ -16,7 +16,7 @@ class IndexController extends AppController
             $pull = 'git pull https://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@github.com/arthyom/appcar_kumbia.git  master';
             $response = shell_exec($pull);
             echo var_dump($response);
-            echo('okokoko');
+            echo('okokoko ???');
         } catch ( Throwable $th) {
             echo('error');
             echo var_dump($th);
