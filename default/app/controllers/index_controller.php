@@ -9,8 +9,20 @@ class IndexController extends AppController
 
     public function index()
     {
-        View::template(null);
-        View::select(null);
-        echo 'hola k ase ps un cambiao jsjsjsjs';
+        try {
+            View::select(null);
+            View::template(null);
+    
+            $pull = 'git pull https://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@github.com/arthyom/appcar_kumbia.git  master';
+            $response = shell_exec($pull);
+            echo var_dump($response);
+            echo('okokoko');
+        } catch ( Throwable $th) {
+            echo('error');
+            echo var_dump($th);
+            //throw $th;
+        }
+       
+
     }
 }
