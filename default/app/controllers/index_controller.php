@@ -13,9 +13,10 @@ class IndexController extends AppController
             View::select(null);
             View::template(null);
     
-            $pull = '/usr/bin/git pull https://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@github.com/arthyom/appcar_kumbia.git  master';
+            $pull = "/usr/bin/git pull https://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@github.com/arthyom/appcar_kumbia.git  master 2>&1";
             $response = shell_exec($pull);
             echo var_dump($response);
+
             echo('okokoko ???');
         } catch ( Throwable $th) {
             echo('error');
