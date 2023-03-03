@@ -42,4 +42,12 @@ class IndexController extends AppController
         View::template(null);
         echo 'adios';
     }
+
+    public function saludos()
+    {
+        # code...
+        View::select(null);
+        View::template(null);
+        echo 'saludos';
+    }
 }
