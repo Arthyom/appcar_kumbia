@@ -11,6 +11,6 @@ class IndexController extends AppController
     {
         View::template(null);
         View::select(null);
-        echo 'hola k ase';
+        echo 'hola k ase ps un cambiao jsjsjsjs';
     }
 }
