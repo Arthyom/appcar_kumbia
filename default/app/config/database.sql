@@ -23,6 +23,10 @@ SET time_zone
 -- Base de datos: `appcar_kumbia`
 --
 
+CREATE DATABASE IF NOT EXISTS appcar_kumbia;
+
+use appcar_kumbia;
+
 -- --------------------------------------------------------
 
 --

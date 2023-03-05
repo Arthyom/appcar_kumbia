@@ -39,7 +39,7 @@ jobs:
       - name: Set up mysql
         run: |
         sudo /etc/init.d/mysql start
-        mysql -e 'CREATE DATABASE ${{ env.DB_DATABASE }};' -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} < default/app/config/database.sql
+        mysql -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} < default/app/config/database.sql
 
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
