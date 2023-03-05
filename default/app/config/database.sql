@@ -77,36 +77,7 @@ CREATE TABLE `servicio`
 -- Estructura de tabla para la tabla `taller`
 --
 
-CREATE TABLE `taller`
-(
-  `id` int
-(11) NOT NULL,
-  `nombre` varchar
-(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `taller`
---
-
-INSERT INTO `taller` (
-`id`,
-`nombre`
-) VALUES
-(1, 'ejemplo'),
-(2, 'ejemplo\r\n');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuario`
---
-
-CREATE TABLE `usuario`
-(
-  `id` int
-(11) NOT NULL,
-  `pass` varchar
+CREATE char
 (100) NOT NULL,
   `user` varchar
 (100) NOT NULL
