@@ -38,7 +38,7 @@ jobs:
 
       - name: Set up mysql
         run:
-          sudo /etc/init.d/mysql start
+          sudo /etc/init.d/mysql start &&
           sudo mysql < default/app/config/database.sql
 
 
