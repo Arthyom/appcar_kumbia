@@ -45,9 +45,7 @@ jobs:
         run: composer install --prefer-dist --no-progress
 
       - name: Set up mysql
-        run: 
-          sudo /etc/init.d/mysql start
-          mysql -e 'CREATE DATABASE ${{ env.DB_DATABASE }};' -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} < default/app/config/database.sql
+        run: sudo /etc/init.d/mysql start
 
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
