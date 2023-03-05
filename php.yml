@@ -21,15 +21,7 @@ jobs:
 
     steps:
 
-    
       - uses: actions/checkout@v3
-
-      - name: Set Up MySQL
-        run: |
-          sudo /etc/init.d/mysql start
-          mysql -e 'CREATE DATABASE ${{ env.DB_DATABASE }};' -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }} 
-          cat default/app/config/database.sql
-
 
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
@@ -45,6 +37,10 @@ jobs:
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
+
+      - name: Set up mysql
+        run:  cat default/app/config/database.sql
+
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
