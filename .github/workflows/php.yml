@@ -10,15 +10,14 @@ permissions:
   contents: read
 
 jobs:
-
-  env:
-    DB_DATABASE: appcar_kumbia
-    DB_USER: root
-    DB_PASSWORD: root
-
   build:
     runs-on: ubuntu-latest
     
+    env:
+      DB_DATABASE: appcar_kumbia
+      DB_USER: root
+      DB_PASSWORD: root
+
     steps:
       - uses: actions/checkout@v3
 
