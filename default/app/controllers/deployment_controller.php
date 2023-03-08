@@ -6,6 +6,7 @@ class DeploymentController extends PublicResourceController
     {
         if ((new Deployment())->runMergeDeployment($this->param())) {
             $this->data = 'ok';
+            return;
         }
 
         $this->data = $this->error('Not comes from allowed origin');
